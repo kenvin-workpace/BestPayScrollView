@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BestPayTableViewHeader">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="103"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="你好," lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PqM-PB-rjP">
+                    <rect key="frame" x="10" y="38" width="53.5" height="27"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="洪振" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FRd-Tc-Drv">
+                    <rect key="frame" x="63.5" y="43" width="35" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3月9日 星期六" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="066-Eu-Hwr">
+                    <rect key="frame" x="10" y="83" width="355" height="20"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FOP-dX-f6k">
+                    <rect key="frame" x="340" y="13" width="25" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="25" id="60P-zS-GQP"/>
+                        <constraint firstAttribute="height" constant="25" id="fXd-JU-dUg"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="FRd-Tc-Drv" firstAttribute="leading" secondItem="PqM-PB-rjP" secondAttribute="trailing" id="1Ls-l7-yld"/>
+                <constraint firstItem="FOP-dX-f6k" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="13" id="5Zz-uz-Xyp"/>
+                <constraint firstItem="066-Eu-Hwr" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Em1-vn-JDq"/>
+                <constraint firstItem="PqM-PB-rjP" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="QzU-sG-n0H"/>
+                <constraint firstItem="PqM-PB-rjP" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="Ryf-Sz-QV8"/>
+                <constraint firstItem="066-Eu-Hwr" firstAttribute="top" secondItem="PqM-PB-rjP" secondAttribute="bottom" constant="18" id="S3j-ha-NTQ"/>
+                <constraint firstItem="066-Eu-Hwr" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="TLL-qQ-1QF"/>
+                <constraint firstItem="066-Eu-Hwr" firstAttribute="leading" secondItem="PqM-PB-rjP" secondAttribute="leading" id="UcW-VS-t3a"/>
+                <constraint firstItem="PqM-PB-rjP" firstAttribute="baseline" secondItem="FRd-Tc-Drv" secondAttribute="baseline" id="acB-9I-ONJ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="FOP-dX-f6k" secondAttribute="trailing" constant="10" id="jLy-yL-aOp"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="dateLabel" destination="066-Eu-Hwr" id="1AJ-pT-RSy"/>
+                <outlet property="imgViewMsg" destination="FOP-dX-f6k" id="p2K-Rj-MSU"/>
+                <outlet property="labelHeaderTime" destination="066-Eu-Hwr" id="NRa-XO-lwa"/>
+                <outlet property="nameLabel" destination="FRd-Tc-Drv" id="BJW-wy-dB6"/>
+            </connections>
+            <point key="canvasLocation" x="53.600000000000001" y="52.623688155922046"/>
+        </view>
+    </objects>
+</document>
